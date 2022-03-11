@@ -1,3 +1,38 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.button1{
+    padding: 5px 20px;
+    color: black;
+    background-color: #FFDA2A;
+    border-radius: 10px;
+}
+
+.button2{
+    padding: 5px 20px;
+    color: #FFDA2A;
+    background-color: #171717;
+    border-radius: 10px;
+}
+
+.button1:hover, .button2:hover{
+    opacity: 0.9;
+}
+
+.buttonMain:hover{
+    opacity: 0.9;
+}
+
+.bg1{
+    background-color: #FFDA2A;
+}
+
+.bg2{
+    background-color: #171717;
+    /*background-image: url("/storage/817.jpg");*/
+    background: linear-gradient(90deg, #171717, rgba(23, 23, 23, 0.7), rgba(255, 218, 42, 0.4)), url("/storage/817.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
