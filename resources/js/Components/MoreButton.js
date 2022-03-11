@@ -8,8 +8,8 @@ export default function MoreButton(){
     return (
         <Link>
             <div className={"flex items-center"}>
-                <p className={"moreButton"}>More</p>
-                <BsArrowRight size={"24px"}/>
+                <p className={"text-white pr-2"}>More</p>
+                <BsArrowRight size={"24px"} color={"white"}/>
             </div>
         </Link>
     );
