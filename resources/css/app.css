@@ -17,11 +17,12 @@
 }
 
 .button1:hover, .button2:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
-.buttonMain:hover{
-    opacity: 0.9;
+.moreButton{
+    color: #171717;
+    padding-right: 5px;
 }
 
 .bg1{
