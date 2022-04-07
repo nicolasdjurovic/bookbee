@@ -33,6 +33,11 @@ body{
     background-color: #FFDA2A;
 }
 
+.bg3{
+    background-color: #cbd5e0;
+    color: black;
+}
+
 .bg2{
     background-color: #171717;
     /*background-image: url("/storage/817.jpg");*/
@@ -40,4 +45,3 @@ body{
     background-size: contain;
     background-repeat: repeat;
 }
-

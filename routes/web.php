@@ -24,12 +24,13 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    return Inertia::render('Dashboard');
+//})->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 
+Route::get('/dashboard', [\App\Http\Controllers\BooksController::class, 'index'])->name('dashboard');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

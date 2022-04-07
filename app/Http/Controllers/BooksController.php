@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
 use Illuminate\Http\Request;
-use TCG\Voyager\Models\Post;
+use Inertia\Inertia;
 
 class BooksController extends Controller
 {
@@ -14,8 +15,7 @@ class BooksController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('dashboard', compact('posts'));
+        return Inertia::render('Dashboard', ['books' => Book::all()]);
     }
 
     /**
