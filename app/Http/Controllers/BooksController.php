@@ -15,7 +15,7 @@ class BooksController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Dashboard', ['books' => Book::all()]);
+        return Inertia::render('Books', ['books' => Book::all()]);
     }
 
     /**

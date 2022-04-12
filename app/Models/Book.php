@@ -10,17 +10,20 @@ class Book extends Model
 {
     use HasFactory;
 
-    protected $appends = ['image_path'];
-//    public function getAllBooks()
-//    {
-//        return Book::all();
-//    }
+    protected $appends = ['image_path', 'audio_path'];
+
 
     public function getImagePathAttribute(){
 
         $img = $this->attributes['image'];
 
         return asset('/storage/' . str_replace('\\', '/', $img));
+    }
 
+    public function getAudioPathAttribute(){
+
+        $aud = $this->attributes['audio'];
+
+        return asset('/storage/' . str_replace('\\\\', '/', $aud));
     }
 }

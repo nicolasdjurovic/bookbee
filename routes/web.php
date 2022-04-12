@@ -30,7 +30,11 @@ Route::get('/', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/dashboard', [\App\Http\Controllers\BooksController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', function (){
+    return Inertia::render('Dashboard');
+})->name('dashboard');
+
+Route::get('/books', [\App\Http\Controllers\BooksController::class, 'index'])->name('books');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
