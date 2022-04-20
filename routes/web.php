@@ -35,6 +35,7 @@ Route::get('/dashboard', function (){
 })->name('dashboard');
 
 Route::get('/books', [\App\Http\Controllers\BooksController::class, 'index'])->name('books');
+Route::get('/books/{id}', [\App\Http\Controllers\BooksController::class, 'show'])->name('book');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -16,7 +16,7 @@ defineProps({
     </div>
     <div class="h-screen w-full flex flex-col px-4 absolute justify-center">
         <h1 class="flex justify-start text-[40px] md:text-[60px] lg:text-[80px] xl:text-[80px] text-white font-bold py-4">
-        The future of <br>audiobooks.
+        The future of <br>books.
         </h1>
         <div class="flex items-center space-x-4">
             <template v-if="canLogin">
