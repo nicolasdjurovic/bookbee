@@ -37,6 +37,9 @@ Route::get('/dashboard', function (){
 Route::get('/books', [\App\Http\Controllers\BooksController::class, 'index'])->name('books');
 Route::get('/books/{id}', [\App\Http\Controllers\BooksController::class, 'show'])->name('book');
 
+Route::get('/like/{id}', [\App\Http\Controllers\BooksController::class, 'likeBook'])->name('books.like');
+Route::get('/dislike/{id}', [\App\Http\Controllers\BooksController::class, 'unlikeBook'])->name('books.unlike');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

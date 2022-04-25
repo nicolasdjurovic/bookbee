@@ -2,10 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body{
-    background-color: #171717;
-}
-
 .button1{
     padding: 5px 20px;
     color: black;
